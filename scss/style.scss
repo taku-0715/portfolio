@@ -318,7 +318,7 @@ body {
     position: relative;
 
     @include mq('sp') {
-        padding: 0 16px;
+        padding: 0 40px;
     }
 }
 
@@ -674,6 +674,7 @@ body {
     @include mq('sp') {
         font-size: 36px;
         letter-spacing: 15px;
+        margin-left: 16px;
     }
 }
 
@@ -849,7 +850,7 @@ body {
 
     @include mq('sp') {
         margin: 50px;
-        a {
+        a { 
             height: 60px;
             line-height: 60px;
             width: 130px;
@@ -1517,6 +1518,10 @@ body {
     padding: 0 16px;
     max-width: 1500px;
     margin: 0 auto;
+
+    @include mq('sp') {
+        padding: 0 40px;
+    }
 }
 
 .pickup-list {}
@@ -1820,10 +1825,19 @@ body {
     max-width: 100%;
     width: 1500px;
     margin: 0 auto;
+
+    @include mq('sp') {
+        padding: 0 40px;
+    }
+
+    @include mq('tab') {
+        padding: 0 20px;
+    }
+    
 }
 
 .work-list {
-    
+    text-align: center;
 }
 
 .work-list-item {
@@ -1834,14 +1848,13 @@ body {
     margin-bottom: 80px;
 
     @include mq('tab') {
-        width: 48%;
+        width: 40%;
         margin-left: 0;
     }
 
     @include mq('sp') {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 0;
+        width: 60%;
+        text-align: left;
 
         &:not(:first-child) {
             margin-top: 80px;
@@ -1850,7 +1863,7 @@ body {
 
     &:nth-child(even) {
         @include mq('tab') {
-            margin-left: 20px;
+            margin-left: 40px;
         }
     }
 
@@ -1948,7 +1961,7 @@ body {
     position: relative;
 
     @include mq('sp') {
-        padding: 0 16px;
+        padding: 0 40px;
     }
 }
 
