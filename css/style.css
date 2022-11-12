@@ -271,7 +271,7 @@ body {
 }
 @media (max-width:767px) {
   .top-inner {
-    padding: 0 16px;
+    padding: 0 40px;
   }
 }
 
@@ -629,6 +629,7 @@ body {
   .work-title {
     font-size: 36px;
     letter-spacing: 15px;
+    margin-left: 16px;
   }
 }
 
@@ -1523,6 +1524,11 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
+@media (max-width:767px) {
+  .pickup-inner {
+    padding: 0 40px;
+  }
+}
 
 .pickup-list-item {
   display: -webkit-box;
@@ -1833,6 +1839,20 @@ body {
   width: 1500px;
   margin: 0 auto;
 }
+@media (max-width:767px) {
+  .work-inner {
+    padding: 0 40px;
+  }
+}
+@media (min-width:768px) and (max-width: 1000px) {
+  .work-inner {
+    padding: 0 20px;
+  }
+}
+
+.work-list {
+  text-align: center;
+}
 
 .work-list-item {
   display: inline-block;
@@ -1843,15 +1863,14 @@ body {
 }
 @media (min-width:768px) and (max-width: 1000px) {
   .work-list-item {
-    width: 48%;
+    width: 40%;
     margin-left: 0;
   }
 }
 @media (max-width:767px) {
   .work-list-item {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 0;
+    width: 60%;
+    text-align: left;
   }
   .work-list-item:not(:first-child) {
     margin-top: 80px;
@@ -1859,7 +1878,7 @@ body {
 }
 @media (min-width:768px) and (max-width: 1000px) {
   .work-list-item:nth-child(even) {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
 @media (min-width:768px) and (max-width: 1000px) {
@@ -1951,7 +1970,7 @@ body {
 }
 @media (max-width:767px) {
   .s-top-inner {
-    padding: 0 16px;
+    padding: 0 40px;
   }
 }
 
