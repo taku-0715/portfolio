@@ -1,0 +1,447 @@
+
+/* ===============================================
+# about.html
+=============================================== */
+/* ===============================================
+# 
+=============================================== */
+.ab-top {
+    margin-top: 180px;
+}
+
+.ab-top-title {
+    font-size: 100px;
+    letter-spacing: 50px;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    position: absolute;
+    top: -95px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mq('sp') {
+        font-size: 46px;
+        letter-spacing: 20px;
+        top: -40px;
+    }
+}
+
+
+/* ===============================================
+# profile
+=============================================== */
+.profile {
+    margin-top: 80px;
+}
+
+.profile-inner {}
+
+.profile-top {
+    display: flex;
+
+    @include mq('sp') {
+        display: block;
+    }
+}
+
+.profile-me {
+    display: flex;
+    flex: 0 0 200px;
+
+    @include mq('tab') {
+        flex: 0 0 200px;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    @include mq('sp') {
+        flex: 0 0 50%;
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+    
+}
+
+.myname {
+    flex: 0 0 110px;
+    padding-top: 70px;
+    margin-left: 20px;
+
+    @include mq('tab') {
+        flex: 0 0 auto;
+        font-size: 20px;
+    }
+
+    @include mq('sp') {
+        flex: 0 0 50%;
+        font-size: 24px;
+        letter-spacing: 5px;
+    }
+}
+
+.profile-point {
+    margin-left: 180px;
+
+    @include mq('tab') {
+        margin-left: 120px;
+    }
+
+    @include mq('sp') {
+        margin-left: 0;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+.profile-main {
+    margin-top: 80px;
+    display: flex;
+
+    @include mq('sp') {
+        display: block;
+    }
+}
+
+.profile-left {
+    flex: 0 0 50%;
+}
+
+.my-background {}
+
+.my-background-title {
+    font-size: 24px;
+    border-left: 5px solid $green;
+    padding-left: 10px;
+
+    @include mq('tab') {
+        font-size: 20px;
+    }
+
+    @include mq('sp') {
+        font-size: 18px;
+        border-left: 3px solid $green;
+    }
+}
+
+.my-background-item {
+    display: flex;
+    margin-top: 20px;
+
+    p {
+        margin: 0;
+        padding: 0;
+        margin-left: 30px;
+
+        @include mq('tab') {
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        @include mq('sp') {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.date {
+    margin-left: 15px;
+}
+
+.school {
+    font-weight: bold;
+}
+
+.my-background-text {
+    display: block;
+    font-weight: 200;
+    font-size: 14px;
+
+    @include mq('sp') {
+        font-size: 10px;
+    }
+}
+
+.my-jobhistory {
+    margin-top: 50px;
+}
+
+.my-jobhistory-title {
+    font-size: 24px;
+    border-left: 5px solid $green;
+    padding-left: 10px;
+
+    @include mq('tab') {
+        font-size: 20px;
+    }
+
+    @include mq('sp') {
+        font-size: 18px;
+        border-left: 3px solid $green;
+    }
+}
+
+.my-jobhistory-item {
+    display: flex;
+    margin-top: 20px;
+
+    p {
+        margin: 0;
+        padding: 0;
+        margin-left: 30px;
+        @include mq('tab') {
+            font-size: 14px;
+            margin-left: 20px;
+        }
+
+        @include mq('sp') {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.date {
+    margin-left: 15px;
+
+}
+
+.company {
+    font-weight: bold;
+}
+
+.my-jobhistory-text {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    @include mq('sp') {
+        font-size: 10px;
+    }
+}
+
+
+.my-favorit {
+    margin-top: 50px;
+}
+
+.my-favorit-title {
+    font-size: 24px;
+    border-left: 5px solid $green;
+    padding-left: 10px;
+
+    @include mq('tab') {
+        font-size: 20px;
+    }
+
+    @include mq('sp') {
+        font-size: 18px;
+        border-left: 3px solid $green;
+    }
+}
+
+.my-favorit-item {
+    margin-top: 20px;
+
+}
+
+.favorit-block {
+    display: inline-block;
+    margin-left: 30px;
+
+    @include mq('tab') {
+        margin-left: 20px;
+    }
+
+    @include mq('sp') {
+        margin-left: 10px;
+    }
+}
+
+.fv-icon {
+    font-size: 1.3em;
+}
+
+.favorit-sub-title {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 10px;
+    @include mq('tab') {
+        font-size: 14px;
+    }
+
+    @include mq('sp') {
+        font-size: 12px;
+    }
+}
+
+.profile-right {
+    margin-left: 80px;
+
+    @include mq('tab') {
+        margin-left: 40px;
+    }
+
+    @include mq('sp') {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+.my-skill {}
+
+.my-skill-title {
+    font-size: 24px;
+    border-left: 5px solid $green;
+    padding-left: 10px;
+
+    @include mq('tab') {
+        font-size: 20px;
+    }
+
+    @include mq('sp') {
+        font-size: 18px;
+        border-left: 3px solid $green;
+    }
+}
+
+.skill-content {
+    margin-top: 15px;
+}
+
+.my-skill-item {
+    width: 100%;
+
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    @include mq('sp') {
+        margin-left: 10px;
+    }
+}
+
+.skill-icon {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: inline-block;
+    width: 100px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: 'Elsie Swash Caps', cursive;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+
+    @include mq('sp') {
+        font-size: 10px;
+        width: 80px;
+    }
+
+    &::after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        left: 130px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px 0 10px 10px;
+        font-weight: bold;
+        background: $green;
+        //23,202,73
+    }
+}
+
+.sk-ht {
+
+    &::after {
+        width: 255px;
+        @include mq('tab') {
+            width: 200px;
+        }
+
+        @include mq('sp') {
+            width: 180px;
+        }
+    }
+}
+
+.sk-cs {
+
+    &::after {
+        width: 255px;
+
+        @include mq('tab') {
+            width: 200px;
+        }
+        @include mq('sp') {
+            width: 180px;
+        }
+    }
+}
+
+.sk-sc {
+
+    &::after {
+        width: 200px;
+        @include mq('tab') {
+            width: 160px;
+        }
+        @include mq('sp') {
+            width: 140px;
+        }
+    }
+}
+
+.sk-js {
+
+    &::after {
+        width: 130px;
+
+        @include mq('tab') {
+            width: 90px;
+        }
+
+        @include mq('sp') {
+            width: 80px;
+        }
+    }
+}
+
+.sk-ph {
+
+    &::after {
+        width: 70px;
+
+        @include mq('tab') {
+            width: 50px;
+        }
+
+        @include mq('sp') {
+            width: 40px;
+        }
+    }
+}
+
+.sk-wd {
+
+    &::after {
+        width: 30px;
+        @include mq('sp') {
+            width: 20px;
+        }
+    }
+}
+
+.text-large {
+    font-size: 20px;
+
+    @include mq('sp') {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,465 @@
+
+/* ===============================================
+# works.html
+=============================================== */
+/* ===============================================
+# top
+=============================================== */
+.wr-top {
+    margin-top: 180px;
+}
+
+.wr-top-title {
+    font-size: 100px;
+    letter-spacing: 50px;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    position: absolute;
+    top: -95px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mq('sp') {
+        font-size: 46px;
+        letter-spacing: 20px;
+        top: -40px;
+    }
+}
+
+/* ===============================================
+# pickup
+=============================================== */
+.pickup {
+    margin-top: 150px;
+}
+
+.pickup-inner {
+    padding: 0 16px;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    @include mq('sp') {
+        padding: 0 40px;
+    }
+}
+
+.pickup-list {}
+
+.pickup-list-item {
+    display: flex;
+
+    
+
+    @include mq('sp') {
+        display: block;
+    }
+
+    &:not(:first-child) {
+        margin-top: 120px;
+    }
+
+    &.is-sp {
+        margin-top: 0;
+    }
+}
+
+.pickup-img-box {
+    flex: 0 0 65%;
+    height: 450px;
+    margin-left: 40px;
+    position: relative;
+
+    @include mq('tab') {
+        flex: 0 0 57%;
+        height: auto;
+    }
+
+    @include mq('sp') {
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+    }
+}
+
+.pickup-img-box-2 {
+    flex: 0 0 60%;
+    height: 450px;
+    position: relative;  
+    margin-right: 30px; 
+    margin-left: 10px;
+
+    @include mq('tab') {
+        flex: 0 0 50%;
+        height: auto;
+        margin-left: 20px;
+    }
+}
+
+.pickup-img-ele {
+    background: url(../images/WORKS/collection/ele.png) no-repeat center center / contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include mq('sp') {
+        background-size: cover;
+    }
+}
+
+.pickup-img-com {
+    background: url(../images/WORKS/collection/conputer.png) no-repeat center center / contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    @include mq('sp') {
+        background-size: cover;
+    }
+}
+.pickup-img-sob {
+    background: url(../images/WORKS/collection/sobolon.png) no-repeat center center / contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    @include mq('sp') {
+        background-size: cover;
+    }
+}
+
+
+.pickup-text-box {
+    margin-left: 40px;
+    margin-top: 130px;
+    position: relative;
+
+    @include mq('sp') {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+.pickup-text-box-2 {
+    margin-left: 40px;
+    margin-top: 130px;
+    position: relative;
+
+    @include mq('sp') {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+.pickup-border-box {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-family: $lexend;
+
+    @include mq('tab') {
+        top: -100px;
+        width: 80px;
+        height: 80px;
+    }
+
+    @include mq('sp') {
+        top: -230px;
+        left: -10px;
+        color: $green;
+        background: #3e3e3e;
+    }
+}
+
+.pickup-border-line {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: #111;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 1px;
+        background: #111;
+    }
+}
+
+.pickup-border-line2 {
+    position: relative;
+    padding: 25px 0;
+    line-height: 1.4;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        width: 100%;
+        background: #111;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 1px;
+        background: #111;
+    }
+
+    span {
+        font-size: 10px;
+        letter-spacing: 3px;
+        display: block;
+        @include mq('tab') {
+            font-size: 8px;
+        }
+    }
+}
+
+.pickup-title {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 5px;
+
+    @include mq('sp') {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+
+}
+
+.pickup-caption {
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-top: 40px;
+
+    @include mq('tab') {
+        margin-top: 20px;
+    }
+
+    @include mq('sp') {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+.pickup-info {
+    color: #aaa;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+
+    @include mq('tab') {
+        margin-top: 10px;
+    }
+
+    @include mq('sp') {
+        margin-top: 10px;
+        letter-spacing: 3px;
+        font-size: 8px;
+    }
+}
+
+.pickup-button {
+    margin-top: 30px;
+
+    @include mq('sp') {
+        margin-top: 15px;
+    }
+}
+
+.pickup-btn {
+    
+
+    @include mq('sp') {
+        font-size: 16px;
+        letter-spacing: 9px;
+        padding-left: 70px;
+    }
+
+    &::before {
+        left: 4px;
+        width: 50px;
+        height: 1px;
+        background: #000;
+
+        @include mq('sp') {
+            left: 4px;
+        width: 50px;
+        height: 1px;
+        }
+    }
+
+    &::after {
+
+        left: 41px;
+        width: 12px;
+        height: 12px;
+        border-top: 2px solid #000;
+        border-right: 2px solid #000;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        @include mq('sp') {
+        left: 41px;
+        width: 12px;
+        height: 12px;
+        }
+    }
+}
+
+/* ===============================================
+# work
+=============================================== */
+.work {
+    margin-top: 160px;
+}
+
+.work-inner {
+    max-width: 100%;
+    width: 1500px;
+    margin: 0 auto;
+
+    @include mq('sp') {
+        padding: 0 40px;
+    }
+
+    @include mq('tab') {
+        padding: 0 20px;
+    }
+    
+}
+
+.work-list {
+    text-align: center;
+}
+
+.work-list-item {
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    margin-left: 3%;
+    margin-bottom: 80px;
+
+    @include mq('tab') {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    @include mq('sp') {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0;
+
+        &:not(:first-child) {
+            margin-top: 80px;
+        }
+    }
+
+    &:nth-child(even) {
+        @include mq('tab') {
+            margin-left: 40px;
+        }
+    }
+
+    &:last-child {
+        @include mq('tab') {
+            margin-bottom: 0;
+        }
+    }
+    
+}
+
+.work-item-img {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    position: relative;
+
+    img {
+        height: 100%;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: all .4s;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background: url(../images/glasses/1.png) no-repeat center center / cover;
+        opacity: 0;
+        transition: all .4s;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.work-item-title {
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.work-item-info {
+    font-family: $lexend;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #aaa;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.work-attention {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,118 @@
+
+
+
+/* ===============================================
+# header
+=============================================== */
+.header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    height: 80px;
+    width: 100%;
+}
+
+.drawer-hamburger {
+    .drawer--right & {
+        right: 3px;
+    }
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+    right: 0px;
+}
+
+.drawer-open {
+    .header-nav {
+        width: 100%;
+    }
+}
+
+.drawer-hamburger {
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+.drawer-hamburger-icon {
+    background-color: $text-color;
+    height: 1px;
+    border-radius: 0px;
+
+    .drawer-open & {
+        background-color: transparent; //透明
+    }
+
+    &::before,
+    &::after {
+        background-color: $text-color;
+        height: 2px;
+        border-radius: 0px;
+    }
+}
+
+
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+.drawer--right .drawer-nav {
+    transition: right .90s;
+    margin-right: 0;
+    right: -100%;
+}
+
+
+.header-inner {}
+
+
+.header-title {
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 170px;
+
+    @include mq('tab') {
+        height: 50px;
+        width: 100px;
+    }
+
+    @include mq('sp') {
+        width: 100px;
+        height: 50px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.header-nav {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 22px;
+    width: 100%;
+    background: #ffffff;
+}
+
+.header-lists {}
+
+.header-list-item {
+    margin-top: 30px;
+}
+
+.header-nav-item-link {
+    font-size: 36px;
+    font-weight: 700;
+    color: $green;
+    transition: all .3s;
+
+    &:hover {
+        color: $pink;
+        opacity: 0.7;
+    }
+}
